@@ -257,7 +257,7 @@ console.log(response.data)
   //     </Text>
   //     <Loader modalVisible={modalVisible} setModalVisible={setModalVisible} />
   //   </View>
-  <View style={{height:'100%'}}>
+  <View style={{height:'100%', backgroundColor: '#fff'}}>
     <Header
         title={'Registration Page'}
         // icon={require('../../../images/profile.png')}
@@ -271,12 +271,14 @@ console.log(response.data)
         <Text style={styles.label}>Personal Information</Text>
         <TextInput
           style={styles.input}
+          placeholderTextColor="#000"
           placeholder="Referral Code"
           value={formData.rc}
           onChangeText={text => handleInputChange('rc', text)}
         />
         <TextInput
           style={styles.input}
+          placeholderTextColor="#000"
           placeholder="First Name"
           value={formData.firstname}
           onChangeText={text => handleInputChange('firstname', text)}
@@ -284,12 +286,14 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Middle Name"
+          placeholderTextColor="#000"
           value={formData.middlename}
           onChangeText={text => handleInputChange('middlename', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Last Name"
+          placeholderTextColor="#000"
           value={formData.lastname}
           onChangeText={text => handleInputChange('lastname', text)}
         />
@@ -301,36 +305,42 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Father's First Name"
+          placeholderTextColor="#000"
           value={formData.fathersfirstname}
           onChangeText={text => handleInputChange('fathersfirstname', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Father's Middle Name"
+          placeholderTextColor="#000"
           value={formData.fathersmiddlename}
           onChangeText={text => handleInputChange('fathersmiddlename', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Father's Last Name"
+          placeholderTextColor="#000"
           value={formData.fatherslastname}
           onChangeText={text => handleInputChange('fatherslastname', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Mother's First Name"
+          placeholderTextColor="#000"
           value={formData.mothersfirstname}
           onChangeText={text => handleInputChange('mothersfirstname', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Mother's Middle Name"
+          placeholderTextColor="#000"
           value={formData.mothersmiddlename}
           onChangeText={text => handleInputChange('mothersmiddlename', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Mother's Last Name"
+          placeholderTextColor="#000"
           value={formData.motherslastname}
           onChangeText={text => handleInputChange('motherslastname', text)}
         />
@@ -356,6 +366,7 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Anniversary"
+          placeholderTextColor="#000"
           value={formData.anniversary}
           onChangeText={text => handleInputChange('anniversary', text)}
         />
@@ -367,18 +378,21 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Spouse's First Name"
+          placeholderTextColor="#000"
           value={formData.spousefirstname}
           onChangeText={text => handleInputChange('spousefirstname', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Spouse's Middle Name"
+          placeholderTextColor="#000"
           value={formData.spousemiddlename}
           onChangeText={text => handleInputChange('spousemiddlename', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Spouse's Last Name"
+          placeholderTextColor="#000"
           value={formData.spouselastname}
           onChangeText={text => handleInputChange('spouselastname', text)}
         />
@@ -391,6 +405,7 @@ console.log(response.data)
       <TextInput
           style={styles.input}
           placeholder="Anniversary"
+          placeholderTextColor="#000"
           value={formData.anniversary}
           onChangeText={text => handleInputChange('anniversary', text)}
         />
@@ -411,54 +426,63 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Village"
+          placeholderTextColor="#000"
           value={formData.village}
           onChangeText={text => handleInputChange('village', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Patti"
+          placeholderTextColor="#000"
           value={formData.patti}
           onChangeText={text => handleInputChange('patti', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="PO"
+          placeholderTextColor="#000"
           value={formData.po}
           onChangeText={text => handleInputChange('po', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Block"
+          placeholderTextColor="#000"
           value={formData.block}
           onChangeText={text => handleInputChange('block', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Tehsil"
+          placeholderTextColor="#000"
           value={formData.tehsil}
           onChangeText={text => handleInputChange('tehsil', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="District"
+          placeholderTextColor="#000"
           value={formData.district}
           onChangeText={text => handleInputChange('district', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Pincode"
+          placeholderTextColor="#000"
           value={formData.pincode}
           onChangeText={text => handleInputChange('pincode', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="State"
+          placeholderTextColor="#000"
           value={formData.state}
           onChangeText={text => handleInputChange('state', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Country"
+          placeholderTextColor="#000"
           value={formData.country}
           onChangeText={text => handleInputChange('country', text)}
         />
@@ -481,6 +505,7 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Experience (years)"
+          placeholderTextColor="#000"
           value={formData.experience}
           onChangeText={text => handleInputChange('experience', text)}
         />
@@ -494,6 +519,7 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Qualification"
+          placeholderTextColor="#000"
           value={formData.qualification}
           onChangeText={text => handleInputChange('qualification', text)}
         />
@@ -505,24 +531,28 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Mobile"
+          placeholderTextColor="#000"
           value={formData.mobile}
           onChangeText={text => handleInputChange('mobile', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="WhatsApp"
+          placeholderTextColor="#000"
           value={formData.whatsapp}
           onChangeText={text => handleInputChange('whatsapp', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Telegram"
+          placeholderTextColor="#000"
           value={formData.telegram}
           onChangeText={text => handleInputChange('telegram', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Email"
+          placeholderTextColor="#000"
           value={formData.email}
           onChangeText={text => handleInputChange('email', text)}
         />
@@ -534,24 +564,28 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Account Name"
+          placeholderTextColor="#000"
           value={formData.accname}
           onChangeText={text => handleInputChange('accname', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Bank Name"
+          placeholderTextColor="#000"
           value={formData.bankname}
           onChangeText={text => handleInputChange('bankname', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Account Number"
+          placeholderTextColor="#000"
           value={formData.accno}
           onChangeText={text => handleInputChange('accno', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="IFSC"
+          placeholderTextColor="#000"
           value={formData.ifsc}
           onChangeText={text => handleInputChange('ifsc', text)}
         />
@@ -563,24 +597,28 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="Facebook"
+          placeholderTextColor="#000"
           value={formData.facebook}
           onChangeText={text => handleInputChange('facebook', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Instagram"
+          placeholderTextColor="#000"
           value={formData.instagram}
           onChangeText={text => handleInputChange('instagram', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Twitter"
+          placeholderTextColor="#000"
           value={formData.twitter}
           onChangeText={text => handleInputChange('twitter', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="LinkedIn"
+          placeholderTextColor="#000"
           value={formData.linkden}
           onChangeText={text => handleInputChange('linkden', text)}
         />
@@ -592,12 +630,14 @@ console.log(response.data)
         <TextInput
           style={styles.input}
           placeholder="PAN"
+          placeholderTextColor="#000"
           value={formData.pan}
           onChangeText={text => handleInputChange('pan', text)}
         />
         <TextInput
           style={styles.input}
           placeholder="Aadhaar"
+          placeholderTextColor="#000"
           value={formData.adhaar}
           onChangeText={text => handleInputChange('adhaar', text)}
         />
@@ -612,7 +652,7 @@ console.log(response.data)
             alert('Please Enter Data');
           }
         }}>
-        <Text style={styles.btnText}>Register</Text>
+        <Text style={{color: '#fff', fontWeight: '600'}}>Register</Text>
       </TouchableOpacity>
     </ScrollView>
     </View>
@@ -634,18 +674,22 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     margin: 10,
+    color: '#182539',
   },
   input: {
     paddingLeft: 20,
-        height: 50,
-        alignSelf: 'center',
-        marginTop: 10,
-        borderWidth: 0.5,
-        borderRadius: 10,
-        width: '90%',
+    height: 50,
+    alignSelf: 'center',
+    marginTop: 13,
+    borderWidth: 0.5,
+    width: '100%',
+    backgroundColor: '#eeeeee',
+    borderWidth: 0,
+    borderRadius: 20,
+    color: '#000'
   },
   loginBtn: {
-        backgroundColor: 'orange',
+        backgroundColor: '#0c9ee6',
         width: '90%',
         height: 50,
         alignSelf: 'center',
@@ -653,6 +697,7 @@ const styles = StyleSheet.create({
         marginTop: 50,
         justifyContent: 'center',
         alignItems: 'center',
+        color: '#fff'
       },
 });
 // const styles = StyleSheet.create({

@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: '600',
-    color: 'purple',
+    color: '#182539',
   },
   icon: {
     width: 24,

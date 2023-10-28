@@ -21,10 +21,17 @@ const Splash = ({navigation}) => {
         }});
         const id = await AsyncStorage.setItem('id',response.data._id);
         console.log(id,"cnkjsc")
-      navigation.navigate('Home');
+
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'Home' }],
+      });
       
     } else {
-      navigation.navigate('Home');
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'Home' }],
+      });
     }
   };
   return (

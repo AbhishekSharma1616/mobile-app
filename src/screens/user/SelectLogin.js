@@ -69,9 +69,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: '700',
+    color: '#182539'
   },
   btn: {
-    backgroundColor: 'purple',
+    backgroundColor: '#0c9ee6',
     height: 50,
     width: '90%',
     borderRadius: 10,

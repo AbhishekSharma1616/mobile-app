@@ -42,18 +42,26 @@ const Login = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
+      <View>
+        <Text style={styles.label}>Enrolment No.</Text>
       <TextInput
-        style={styles.inputStyle}
-        placeholder={'Enter Email Id'}
+        style={[styles.inputStyle, {backgroundColor: '#eeeeee'}]}
+        placeholder={'Enter your Enrolment No.'}
+        placeholderTextColor="#000"
         value={email}
         onChangeText={txt => setEmail(txt)}
       />
+      </View>
+      <View>
+        <Text style={styles.label}>Password</Text>
       <TextInput
         style={styles.inputStyle}
-        placeholder={'Enter Password '}
+        placeholder={'Enter Password'}
+        placeholderTextColor="#000"
         value={password}
         onChangeText={txt => setPassword(txt)}
       />
+      </View>
       <TouchableOpacity
         style={styles.loginBtn}
         onPress={() => {
@@ -70,7 +78,7 @@ const Login = ({navigation}) => {
         onPress={() => {
           navigation.navigate('UserLogin');
         }}>
-        <Text style={[styles.btnText,{color:'blue',textAlign:'center'}]}>Register?</Text>
+        <Text style={[styles.btnText,{color:'#0c9ee6',textAlign:'center'}]}>Register?</Text>
       </TouchableOpacity>
     </View>
   );
@@ -80,6 +88,7 @@ export default Login;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff'
   },
   title: {
     fontSize: 20,
@@ -92,13 +101,22 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     height: 50,
     alignSelf: 'center',
-    marginTop: 30,
+    marginTop: 13,
     borderWidth: 0.5,
-    borderRadius: 10,
     width: '90%',
+    backgroundColor: '#eeeeee',
+    borderWidth: 0,
+    borderRadius: 20
+  },
+  label: {
+    fontSize: 15,
+    paddingLeft: 30,
+    marginTop: 20,
+    fontWeight: 'bold',
+    color: '#182539'
   },
   loginBtn: {
-    backgroundColor: 'orange',
+    backgroundColor: '#0c9ee6',
     width: '90%',
     height: 50,
     alignSelf: 'center',
@@ -110,7 +128,7 @@ const styles = StyleSheet.create({
   btnText: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#000',
+    color: '#fff',
   },
   
 });
